@@ -56,7 +56,7 @@ class MemoryMemberRepositoryTest {
         member1.setName("spring1");
         repository.save(member1);
 
-        Member member2 = new Member(); // 위의 것 붙여넣고 [Shift + F6]으로 전체 rename 가능
+        Member member2 = new Member();
         member2.setName("spring2");
         repository.save(member2);
 

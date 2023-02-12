@@ -9,7 +9,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-    public final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     /**
      * 회원 가입
@@ -31,7 +35,7 @@ public class MemberService {
     /**
      * 전체 회원 조회
      */
-    public List<Member> findMembers() {
+    public List<Member> findMember() {
         return memberRepository.findAll();
     }
 
