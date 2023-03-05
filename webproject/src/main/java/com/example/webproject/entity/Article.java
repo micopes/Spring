@@ -1,6 +1,7 @@
 package com.example.webproject.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.annotation.Generated;
@@ -11,6 +12,7 @@ import javax.persistence.Id;
 
 @Entity // DB가 해당 객체를 인식 가능하도록
 @AllArgsConstructor
+@NoArgsConstructor // 디폴트 생성자 추가
 @ToString
 public class Article {
 
