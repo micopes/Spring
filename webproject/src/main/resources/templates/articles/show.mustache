@@ -19,7 +19,9 @@
     </tbody>
 </table>
 
+<!-- POST, GET, UPDATE, DELETE HTML에는 UPDATE, DELETE가 없어서 일단 POST, GET으로 대체-->
 <a href="/articles/{{article.id}}/edit" class="btn btn-primary">Edit</a>
+<a href="/articles/{{article.id}}/delete" class="btn btn-danger">Delete</a>
 <a href="/articles">Go to Article List</a>
 
 {{>layouts/footer}}
